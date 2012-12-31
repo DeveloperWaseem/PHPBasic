@@ -1,6 +1,6 @@
 <?php
 //PHPKids
-//By C1D - 31/12/2012
+//By C1D
 //This function will generate a random string, It takes in $chars (example: $chars = 'ABCDEFG') and $charlen (the length
 //of the randomly generated string).
 function randgen($chars,$charlen){
