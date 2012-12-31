@@ -1,5 +1,5 @@
 <?php
-//PHPKids - examples
+//PHPBasic - examples
 //By C1D
 include 'main.php';
 //EXAMPLE OF RANDGEN()
@@ -26,4 +26,6 @@ if(detect_mobile){
 }
 //EXAMPLE OF SAFE()
 echo safe('<iframe src="malicious_content"></iframe>');
+//EXAMPLE OF getXML()
+echo getXML('test.xml');
 ?>
