@@ -1,5 +1,5 @@
 <?php
-//PHPKids
+//PHPBasic
 //By C1D
 //This function will generate a random string, It takes in $chars (example: $chars = 'ABCDEFG') and $charlen (the length
 //of the randomly generated string).
@@ -59,5 +59,15 @@ function detect_mobile(){
 //This function removes html code and makes the text safe for mysql
 function safe_text($str){
 	return mysql_real_escape_string(htmlentities($str, ENT_QUOTES, 'utf-8'));
+}
+//This function gets the XML from a webpage/API
+function getXML($url){
+    if(simplexml_load_file($url)){
+    return simplexml_load_file($url);
+    }else{
+    return 'XMLBasic ERROR // Sorry the site disabled this function or this is not a real XML file.<br>
+            XMLBasic Troubleshoot (For siteowner) // Please enable "allow_url_fopen" in your php.ini or check your XML <br>
+            formatting!';
+    }
 }
 ?>
