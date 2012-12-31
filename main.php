@@ -66,7 +66,7 @@ function getXML($url){
     return simplexml_load_file($url);
     }else{
     return 'PHPBasic ERROR // Sorry the site disabled this function or this is not a real XML file!<br>
-            PHPBasix Troubleshoot (For siteowner) // Please enable "allow_url_fopen" in your php.ini or check your XML <br>
+            PHPBasic Troubleshoot (For siteowner) // Please enable "allow_url_fopen" in your php.ini or check your XML <br>
             formatting!';
     }
 }
