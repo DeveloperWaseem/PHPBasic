@@ -14,6 +14,14 @@ function randgen($chars,$charlen){
 function ip(){
 	return $_SERVER['REMOTE_ADDR'];
 }
+//This function replaces the $_REQUEST['str'] variable
+function request($value){
+	if(isset($_REQUEST[$value])){
+		return $_REQUEST[$value];
+	}else{
+		return false;
+	}
+}
 //This function replaces the $_POST['str'] variable
 function post($value){
 	if(isset($_POST[$value])){
