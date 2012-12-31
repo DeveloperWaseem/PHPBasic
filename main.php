@@ -56,4 +56,8 @@ function detect_mobile(){
 		return false;
 	}
 }
+//This function removes html code and makes the text safe for mysql
+function safe_text($str){
+	return mysql_real_escape_string(htmlentities($str, ENT_QUOTES, 'utf-8'));
+}
 ?>
