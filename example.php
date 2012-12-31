@@ -1,6 +1,7 @@
 <?php
 //PHPKids - examples
 //By C1D
+include 'main.php';
 //EXAMPLE OF RANDGEN()
 echo randgen('ABCDEF123456',7);
 //EXAMPLE OF IP()
@@ -23,4 +24,6 @@ if(email_html('bob@bob.com','test@test.com','Hello',"<h1>Hello,</h1>\n<h3>I am</
 if(detect_mobile){
   echo 'You\'re using a mobile device';
 }
+//EXAMPLE OF SAFE()
+echo safe('<iframe src="malicious_content"></iframe>');
 ?>
