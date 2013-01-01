@@ -4,7 +4,7 @@
 //This function will generate a random string, It takes in $chars (example: $chars = 'ABCDEFG') and $charlen (the length
 //of the randomly generated string).
 function randgen($chars,$charlen){
-	size = strlen($chars);
+	$size = strlen($chars);
 	for( $i = 0; $i < $charlen; $i++ ) {
 		$str .= $chars[ rand( 0, $size - 1 ) ];
 	}
