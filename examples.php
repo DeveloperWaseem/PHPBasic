@@ -1,5 +1,6 @@
 <?php
 //PHPBasic - examples
+//More documentation is available @ the WIKI
 //By C1D
 include 'main.php';
 //EXAMPLE OF RANDGEN()
