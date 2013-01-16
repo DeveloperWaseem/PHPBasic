@@ -52,11 +52,16 @@ function debug_detect_mobile(){
 function debug_getXML($url){
     if(!simplexml_load_file($url)){
     $error = "PHPBasic [DEBUG MODE] // Sorry the site disabled this function or this is not a real XML file!\n
-            PHPBasic Troubleshoot (For site-owner) // Please enable \"allow_url_fopen\" in your php.ini or check your XML <br>
+            PHPBasic Troubleshoot (For site-owner) // Please enable \"allow_url_fopen\" in your php.ini or check your XML\n
             formatting!";
     }else{
     	$error = 'PHPBasic [DEBUG MODE] - There seems to be no errors!';
     }
     return $error;
+}
+function debug_safestring($s){
+	if(!is_string($s)){
+		return 'PHPBasic [DEBUG MODE] - Integer can\'t be used';
+	}
 }
 ?>
